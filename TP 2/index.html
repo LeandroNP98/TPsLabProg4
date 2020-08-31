@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="baseStyle.css">
+
+    <title>REGISTRO</title>
+
+</head>
+<body>
+    <div class= "form1">
+        <form action="sintaxis-basica.php" method="POST">
+
+            <header>
+                <h1>Contact Form</h1>
+            </header>
+ 
+            <div>
+                <b class="circle">1</b><h3>Your basic info</h3>
+                <p class="separacion2">Name</p>
+                <input class="borde" type="text" name="name">
+                <p class="separacion2">Email</p>
+                <input  class="borde"type="email" name="email">
+                <p class="separacion2">Password</p>
+                <input  class="borde"type="password" name="password">
+                <p class="separacion2">Bithday</p>
+                <input  class="borde"type="date" name="date">
+            </div>
+
+            <div>
+                <p class="especific1">Sex:</p>
+                <input class="separacion1" type="radio" name="sex" value= "Male" id="Male">
+                <label for="Male">Male</label>
+                
+                <input class="separacion1" type="radio" name="sex" value= "Female" id="Female">
+                <label for="Female">Female</label>
+            </div>
+
+            <div>
+                <b class="circle">2</b><h3>Your Profile</h3>
+                <p class="separacion2">About you</p>
+                <textarea class="borde" name="areatext" id="" cols="30" rows="10"></textarea>
+                <p class="separacion2">Role</p>
+                
+                <select class="borde" name="Rolelist">
+                    <option value="1">"Front-End Developer"</option>
+                    <option value="2">"Front-End Engineer"</option>
+                    <option value="3">"Web Designer"</option>
+                    <option value="4">"UX/IU Designer"</option>
+                    </select>
+            </div>
+
+            <div>
+                <p>Interest</p>
+                <input type="checkbox" name="interest" value="Data Base" id="Data Base">
+                <label for="Data Base">Data Base</label>
+                <input type="checkbox" name="interest" value="Design" id="Design">
+                <label for="Design">Design</label>
+                <input type="checkbox" name="interest" value="Business" id="Business">
+                <label for="Business">Business</label>
+                <input type="checkbox" name="interest" value="Unit Test" id="Unit Test">
+                <label for="Unit Test">Unit Test</label>
+                <input type="checkbox" name="interest" value="Could Development" id="Could Development">
+                <label for="Could Development">Could Development</label>
+                <input type="checkbox" name="interest" value="Web Development" id="Web Development">
+                <label for="Web Development">Web Development</label>
+                <p></p>
+            </div>
+
+            <div>
+                <input class= "jorge" type="submit" value="Send"> <input class= "jorge" type="reset" value="Reset">
+            </div>
+                
+        </form>
+    </div>    
+    
+</body>
+</html>
